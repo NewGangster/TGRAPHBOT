@@ -16,7 +16,7 @@ async def start(client, message):
        await tgraph.send_message(
                chat_id=message.chat.id,
                text="""𝐇𝐀𝐈 𝐈 𝐀𝐌 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐏𝐇 𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐁𝐎𝐓. 
-               𝐈 𝐂𝐀𝐍 𝐔𝐏𝐋𝐎𝐀𝐃 𝐏𝐇𝐎𝐓𝐎𝐒 𝐔𝐍𝐃𝐄𝐑 5𝐌𝐁 𝐎𝐍 telegra.ph.""",   
+𝐈 𝐂𝐀𝐍 𝐔𝐏𝐋𝐎𝐀𝐃 𝐏𝐇𝐎𝐓𝐎𝐒 𝐔𝐍𝐃𝐄𝐑 5𝐌𝐁 𝐎𝐍 telegra.ph.""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                     InlineKeyboardButton(
