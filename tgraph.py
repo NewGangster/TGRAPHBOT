@@ -20,7 +20,8 @@ async def start(client, message):
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                     InlineKeyboardButton(
-                                            "🎧𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏🎧", url="https://t.me/NAZRIYASUPPORT")
+                                            "🎧𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏🎧", url="https://t.me/NAZRIYASUPPORT"), 
+                                    InlineKeyboardButton("🎧𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄🎧", url="https://github.com/MR-JINN-OF-TG/TGRAPHBOT") 
                                     ]]
                             ),        
             disable_web_page_preview=True,        
