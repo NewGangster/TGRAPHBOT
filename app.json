@@ -12,18 +12,15 @@
     "success_url": "https://t.me/NAZRIYASUPPORT",
     "env": {
         "BOT_TOKEN": {
-            "description": "Your Telegram Bot Token from @BotFather",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
-            "value": ""
-        },
-        "APP_ID": {
-            "description": "Your APP ID from my.telegram.org",
-            "value": ""
-        }
+      "description": "Your Bot token from @Botfather"
     },
+    "API_ID": {
+      "description": "Your API_ID from https://my.telegram.org"
+    },
+    "API_HASH": {
+      "description": "Your API_HASH from https://my.telegram.org"
+    }
+   },
     "addons": [],
     "buildpacks": [
         {
