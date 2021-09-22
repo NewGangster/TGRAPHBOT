@@ -1,0 +1,39 @@
+{
+    "name": "TGRAPHBOT",
+    "description": "A BOT THAT WHICH UPLOAD PHOTOS TO Telegram.ph",
+    "logo": "https://telegra.ph/file/f98ee0970ae4552a7cd91.jpg",
+    "keywords": [
+        "Telegraph",
+        "Uploader",
+        "Telegram Bot"
+    ],
+    "website": "https://github.com/MR-JINN-OF-TG",
+    "repository": "https://github.com/MR-JINN-OF-TG/TGRAPHBOT",
+    "success_url": "https://t.me/NAZRIYASUPPORT",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "Your Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
