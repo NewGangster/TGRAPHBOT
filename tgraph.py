@@ -12,7 +12,16 @@ tgraph = Client(
 
 @tgraph.on_message(filters.command("start"))
 async def start(client, message):
-    await message.reply_text(
-        text=f"Hai AM a simple telegraph uploader bot I can upload images under 5mb on telegram.ph 😐,
-        disable_web_page_preview=True
-    )
+   if message.chat.type == 'private':
+       await tgraph.send_message(
+               chat_id=message.chat.id,
+               text="""HAI I AM TELEGRAPH UPLOADER BOT. 
+               I CAN UPLOAD PHOTOS UNDER 5MB ON telegra.ph.""",   
+                            reply_markup=InlineKeyboardMarkup(
+                                [[
+                                    InlineKeyboardButton(
+                                            "🎧SUPPORT GROUP🎧", url="https://t.me/NAZRIYASUPPORT")
+                                    ]]
+                            ),        
+            disable_web_page_preview=True,        
+            parse_mode="html")
