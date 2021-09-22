@@ -39,3 +39,12 @@ async def tgraphphoto(client, message):
         await msg.edit_text(f'**𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐃 𝐓𝐎 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐏𝐇!\n\n👉 https://telegra.ph{response[0]}\n\n𝐁𝐘 telegra.ph**',
             disable_web_page_preview=True,
         )        
+
+print(
+    """
+TELEGRAPH BOT DEPLOYED SUCCESSFULLY 
+JOIN @NAZRIYASUPPORT
+"""
+)
+
+tgraph.run()        
