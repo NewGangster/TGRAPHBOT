@@ -11,7 +11,7 @@
     "repository": "https://github.com/MR-JINN-OF-TG/TGRAPHBOT",
     "success_url": "https://t.me/NAZRIYASUPPORT",
     "env": {
-        "TG_BOT_TOKEN": {
+        "BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
             "value": ""
         },
