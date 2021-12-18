@@ -10,22 +10,17 @@ tgraph = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-@tgraph.on_message(filters.command("start"))
-async def start(client, message):
-   if message.chat.type == 'private':
-       await tgraph.send_message(
-               chat_id=message.chat.id,
-               text="""𝐇𝐀𝐈 𝐈 𝐀𝐌 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐏𝐇 𝐔𝐏𝐋𝐎𝐀𝐃𝐄𝐑 𝐁𝐎𝐓. 
-𝐈 𝐂𝐀𝐍 𝐔𝐏𝐋𝐎𝐀𝐃 𝐏𝐇𝐎𝐓𝐎𝐒 𝐔𝐍𝐃𝐄𝐑 5𝐌𝐁 𝐎𝐍 telegra.ph.""",   
-                            reply_markup=InlineKeyboardMarkup(
-                                [[
-                                    InlineKeyboardButton(
-                                            "🎧𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏🎧", url="https://t.me/NAZRIYASUPPORT"), 
-                                    InlineKeyboardButton("🎧𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄🎧", url="https://github.com/MR-JINN-OF-TG/TGRAPHBOT") 
-                                    ]]
-                            ),        
-            disable_web_page_preview=True,        
-            parse_mode="html")
+START_TEXT = """ Hai {} 🤞, 
+Am a Simple telegraph uploader bot I can upload images, videos and gif under 5Mb to [Telegra.ph]
+"""
+
+@tgraph.on_message(filters.private & filters.command(["start"]))
+async def start(client, update):
+    await update.reply_text(
+        text=START_TEXT,
+        disable_web_page_preview=True,
+        reply_markup=START_BUTTONS
+    )
 
 @tgraph.on_message(filters.photo)
 async def tgraphphoto(client, message):
