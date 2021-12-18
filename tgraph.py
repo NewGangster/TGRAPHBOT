@@ -22,8 +22,8 @@ async def start(client, update):
         reply_markup=START_BUTTONS
     )
 
-@tgraph.on_message(filters.photo)
-async def tgraphphoto(client, message):
+@tgraph.on_message(filters.media)
+async def media(client, message):
     msg = await message.reply_text("𝐖𝐀𝐈𝐓 𝐀 𝐌𝐎𝐌𝐄𝐍𝐓 😴 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐓𝐎 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐏𝐇.........")
     download_location = await client.download_media(
         message=message, file_name='root/tg')
