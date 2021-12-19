@@ -21,9 +21,9 @@ START_BUTTONS = InlineKeyboardMarkup(
     )
 
 @tgraph.on_message(filters.private & filters.command(["start"]))
-async def start(client, update):
+async def start(bot, update):
     await update.reply_text(
-        text=START_TEXT.format(update.from_user.mention)
+        text=START_TEXT.format(update.from_user.first_name),
         disable_web_page_preview=True,
         reply_markup=START_BUTTONS
     )
