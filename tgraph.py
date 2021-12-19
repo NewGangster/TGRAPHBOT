@@ -14,6 +14,12 @@ START_TEXT = """ Hai {} 🤞,
 Am a Simple telegraph uploader bot I can upload images, videos and gif under 5Mb to [Telegra.ph]
 """
 
+START_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('SOURCE CODE', url="https://github.com/MR-JINN-OF-TG/TGRAPHBOT")
+        ]]
+    )
+
 @tgraph.on_message(filters.private & filters.command(["start"]))
 async def start(client, update):
     await update.reply_text(
