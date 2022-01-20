@@ -10,13 +10,13 @@ tgraph = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-START_TEXT = """ Hai {} 🤞, 
+START_TEXT = """ Hai {} ✨, 
 Am a Simple telegraph uploader bot I can upload images, videos and gif under 5Mb to [Telegra.ph]
 """
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('SOURCE CODE', url="https://github.com/MR-JINN-OF-TG/TGRAPHBOT")
+        InlineKeyboardButton('SOURCE CODE🧚', url="https://t.me/GangBots")
         ]]
     )
 
